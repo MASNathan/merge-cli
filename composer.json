@@ -1,0 +1,29 @@
+{
+    "name": "masnathan/merge-cli",
+    "description": "CLI helper tool to merge various config files into one.",
+    "keywords": ["merge", "config", "files", "cli", "tool"],
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "masnathan/parser": "^0.0.1",
+        "nette/neon": "^2.4",
+        "symfony/yaml": "^4.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MASNathan\\Merge\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["merge"]
+}

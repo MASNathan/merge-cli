@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+try {
+    $app = new \MASNathan\Merge\Application(getcwd(), $argv);
+
+    $app->run();
+} catch (Exception $exception) {
+    fwrite(STDERR, $exception->getMessage() . PHP_EOL);
+
+    exit(1);
+}
+
